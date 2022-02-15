@@ -131,11 +131,31 @@ header {
 
 .offer_product {
   margin-top: 30px;
+  background-image: url("../img/product/shirt.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+  position: relative;
 }
 
-.offer_product img {
-  width: 100%;
-  height: 100%;
+.offer_product .offer_promotion {
+  border: 5px solid #FFFFFF;
+  width: 70%;
+  padding: 10px;
+  text-align: center;
+  position: absolute;
+  bottom: 50px;
+  left: 20px;
+}
+
+.offer_product .offer_promotion a {
+  color: black;
+}
+
+.offer_product .offer_promotion h5,
+.offer_product .offer_promotion span {
+  color: #F3652A;
 }
 
 .breadcrumb {

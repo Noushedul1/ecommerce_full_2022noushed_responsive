@@ -125,9 +125,32 @@ header{
 // start offer product
 .offer_product{
     margin-top: 30px;
-    img{
-        width: 100%;
-        height: 100%;
+    // img{
+    //     width: 100%;
+    //     height: 100%;
+    // }
+    background-image: url('../img/product/shirt.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    position: relative;
+    .offer_promotion{
+        border: 5px solid $whitecolor;
+        width: 70%;
+        padding: 10px;
+        text-align: center;
+        position: absolute;
+        bottom: 50px;
+        left: 20px;
+        a{
+            color: black;
+        }
+        h5,
+        span 
+        {
+            color: $orangecolor;
+        }
     }
 }
 // end offer product
