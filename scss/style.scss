@@ -1,0 +1,383 @@
+@import './color/_color';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+// start header 
+header{
+    background: $headerbg;
+    color: $textopacity;
+}
+.logo{
+    text-align: center;
+    font-size: 30px;
+    a{
+        color: $whitecolor;
+    }
+    span{
+        color: $orangecolor;
+    }
+}
+.icons{
+    display: flex;
+    justify-content: flex-end;
+}
+// end header 
+// start navbar 
+#mynavbar{
+    background-color: $headerbg;
+    border-top: 1px solid $textopacity;
+}
+.bg-dark{
+    background: $headerbg !important;
+}
+.nav-link{
+    color: $whitecolor !important;
+    transition: all .5s ease-in;
+}
+.nav-link:hover{
+    color: $orangecolor !important;
+}
+// end navbar 
+// start full content 
+.full_content{
+    background: $fullbg;
+    padding-top: 30px;
+}
+// start col-3 
+// start shopping 
+.shopping_option{
+    background: $whitecolor;
+    box-shadow: 1px 1px 1px 1px #ddd;
+}
+// end shopping 
+// start category 
+.category{
+    background: $whitecolor;
+    margin-top: 25px;
+    p{
+        padding-left: 15px;
+    }
+}
+.category .card-header{
+    background: $whitecolor !important;
+}
+.category .card{
+    border: 0 !important;
+}
+.span_color{
+    color: $textopacity;
+}
+// end category 
+.under_category{
+    // border: 1px solid $textopacity;
+    width: 90%;
+    margin: 0 auto;
+}
+// start price
+.range_bar{
+    border: 3px solid $orangecolor;
+    width: 90%;
+    margin: 0 auto;
+} 
+.range_of{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+// end price 
+// start manufacture 
+
+// end manufacture 
+// start color 
+
+// end color 
+// start compare product 
+.conpare_product{
+    background: $whitecolor;
+    text-align: center;
+    padding: 20px;
+}
+// end compare product 
+// start popular tages
+.popular_tages{
+    @extend .conpare_product;
+}
+// end popular tages
+// start tages 
+.tages{
+    display: flex;
+    flex-wrap: wrap;
+    p{
+        border: 1px solid black;
+        background: $whitecolor;
+    }   
+}
+// end tages 
+// start all tages
+.all_tages{
+        border: 1px solid black;
+        background: $whitecolor;
+        display: inline-block;
+}
+// end all tages
+// start offer product
+.offer_product{
+    margin-top: 30px;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+// end offer product
+// end col-3 
+
+// start col-6 
+// start breadcrumb
+.breadcrumb{
+    background: $fullbg;
+}
+.library:active{
+    color: $orangecolor;
+}
+.my_library{
+    color: $orangecolor;
+}
+// end breadcrumb 
+// start banner
+.banner{
+    background-image: url('../img/banner.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 430px;
+    color: $whitecolor;
+    .banner_all_details{
+        padding-top: 50px;
+        h2{
+            font-size: 40px;
+        }
+        .banner_1{
+            font-size: 30px;
+        }
+        .banner_details{
+            display: flex;
+            flex-direction: column;
+            width: 500px;
+            margin: 0 auto;
+            align-items: center;
+        }   
+    }
+} 
+// end banner 
+// start list and grid view
+.fa-grip-vertical,
+.fa-list
+{
+    border: 1px solid $textopacity;
+    color: $textopacity;
+    margin: 0px 5px 0px 2px;
+    padding: 5px;
+    transition: all .5s ease-in;
+}
+.fa-grip-vertical:hover,
+.fa-list:hover
+{
+    color: $orangecolor;
+    border: 1px solid $orangecolor;
+}
+
+// end list and grid view 
+// start product show
+.product{
+    text-align: center;
+    background: $whitecolor;
+    padding: 30px;
+    margin-top: 30px;
+    .star{
+        color: $orangecolor;
+        .one{
+            color: $textopacity;
+        }
+    }
+    .add_to_cart{
+        border: 1px solid $textopacity;
+        transition: all .4s ease-in;
+    }
+    .add_to_cart:hover{
+        color: $orangecolor;
+        border: 1px solid $orangecolor;
+    }
+}
+.product img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    opacity: .7;
+    transition: opacity .4s ease-out;
+}
+.product img:hover{
+    opacity: 1;
+}
+.product_price{
+    color: $orangecolor;
+}
+// end product show 
+// start pagination 
+.page-link{
+    color: $textopacity !important;
+    transition: all .4s ease-in;
+}
+.page-link:hover{
+    background: black;
+    color: white;
+}
+// end pagination 
+// end col-6 
+
+// end full content 
+
+// start footer-header 
+#footer-header{
+    background: $whitecolor;
+    margin: 50px;
+    .free_shipping{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        height: 100%;
+        border: 1px solid black;
+        padding: 15px;
+        .shipping_content p{
+            color: $orangecolor;
+        }
+        .shipping_logo{
+            transform: rotate(-30deg);
+            display: flex;
+            align-items: center;
+            padding: 5px;
+            .fa-plane{
+                font-size: 25px; 
+            }
+        }
+    }
+}
+// start customer_service 
+.customer_service{
+    @extend .free_shipping;
+    .customer_content p{
+        color: $orangecolor;
+    }
+    .customer_service_logo{
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        .fa-headphones{
+            font-size: 25px; 
+        }
+    }
+}
+// end customer_service 
+// start money back 
+.money_back{
+    @extend .customer_service;
+    .money_back_content p{
+        color: $orangecolor;
+    }
+    .money_back_logo{
+        transform: rotate(-30deg);
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        .fa-rotate-right{
+            font-size: 25px; 
+        }
+    }
+}
+// end money back 
+// end footer-header 
+
+// start footer
+.email{
+    display: flex;
+    .email_details a{
+        color: $textopacity;
+        text-decoration: none;
+    }
+}
+.number{
+    display: flex;
+}
+.location{
+    @extend .email;
+}
+.contactus_details{
+    color: $textopacity;
+}
+.information ul li{
+    list-style-type: none;
+    a{
+        text-decoration: none;
+        color: $textopacity;
+    }
+}
+.collections ul li{
+    list-style-type: none;
+    a{
+        text-decoration: none;
+        color: $textopacity;
+    }
+}
+.my_account ul li{
+    list-style-type: none;
+    a{
+        text-decoration: none;
+        color: $textopacity;
+    }
+}
+.footer_details .logo a{
+    color: black;
+}
+.social_icons{
+    display: flex;
+    justify-content: space-between;
+}
+.fa-facebook-f
+,.fa-twitter
+,.fa-google-plus-g
+,.fa-youtube
+{
+    border: 1px solid $textopacity;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 50%;
+    transition: all .6s ease-in;
+}
+.fa-facebook-f:hover
+,.fa-twitter:hover
+,.fa-google-plus-g:hover
+,.fa-youtube:hover{
+    color: $orangecolor;
+    border: 0;
+}
+// end footer 
+// start footer tail 
+.currency_card{
+    display: flex;
+    justify-content: space-between;
+    .fa-cc-visa{
+        font-size: 30px;
+    }
+    .fa-cc-mastercard{
+        @extend .fa-cc-visa;
+    }
+    .fa-paypal{
+        @extend .fa-cc-visa;
+    }
+}
+.store_card{
+    display: flex;
+    justify-content: space-between;
+}
+// end footer tail 
